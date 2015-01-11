@@ -1,2 +1,8 @@
 # home
-My private home environment
+
+My private home environment for `OSX`.
+
+# usage
+
+    
+    $ make install
