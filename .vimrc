@@ -1,8 +1,9 @@
 let $LANG="zh_CN.UTF-8"
-set fileencodings=utf-8,chinese,latin-1
+set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set encoding=utf-8
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set fileformats=unix
+
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
