@@ -24,7 +24,8 @@ alias forgpl='sh ~/forgpl.sh'
 alias svnrevertall='sh ~/svnrevertall.sh'
 alias svnrmall='sh ~/svnrmall.sh'
 
-#npm
+#node
+alias nv='node --version'
 alias ni='npm install'
 NODE_ENV='development'
 
