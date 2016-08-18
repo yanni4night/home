@@ -18,4 +18,4 @@ else
 fi
 
 echo "\033[0;32mgit $opt origin $branch\033[0m"
-git $opt origin $branch
+git $opt origin $branch --tag
