@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#shell
+alias ll='ls -l'
+alias cl='clear'
+alias md5sum='md5 -r'
+alias r='echo -e "\033[0m"'
+export GREP_OPTIONS="--exclude-dir=\.svn --exclude-dir=\.git --exclude-dir=output --exclude-dir=_build --color"
+
+#osx
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+alias rmds="sh ~/CleanDSStore.sh"
+
+#git
+alias gpu='sh ~/git.sh push'
+alias gpl='sh ~/git.sh pull'
+alias gitignore='sh ~/gitignore.sh'
+alias gs='git status'
+alias gd='git diff'
+alias gb='git branch'
+alias forgpl='sh ~/forgpl.sh'
+
+#svn
+alias svnrevertall='sh ~/svnrevertall.sh'
+alias svnrmall='sh ~/svnrmall.sh'
+
+#npm
+alias ni='npm install'
+NODE_ENV='development'
+
+#baidu
+alias relay='~/bin/relay fedev yinyong02'
+alias tbu='USERNAME=scmpf sh build.sh -o'
+alias ci='svn ci -m "ISSUE=`cat issue.info`"'
+alias upload='python2.7 ~/upload.py --exclude="deploy.yml,module.yml,deploy-conf.js,fis-conf.js,deploy.sh,compile.conf"'
+alias update='python2.7 ~/upload.py -i `cat issue.info` --exclude="deploy.yml,module.yml,deploy-conf.js,fis-conf.js,deploy.sh,compile.conf"'
+
+
+shopt -s expand_aliases 

@@ -4,5 +4,6 @@ My private home environment for `OSX`.
 
 # usage
 
-    
-    $ make install
+```sh    
+make install
+```

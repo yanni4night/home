@@ -1,0 +1,15 @@
+#!/usr/bin/env expect
+
+set server  [lindex $argv 0 ]
+set user [lindex $argv 1 ]
+
+## login relay
+spawn ssh ${user}@relay01.baidu.com
+
+interact -o -nobuffer "$" return
+
+## ssh server
+#send "ssh $user@$server\n"
+#send "clear \n"
+
+interact
