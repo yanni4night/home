@@ -2,5 +2,5 @@
 
 for f in `ls -A custom_scripts`;
 do
-    cp -rf custom_scripts/$f ~/
+    rm -rf ~/$f
 done
