@@ -31,7 +31,7 @@ alias ni='npm install'
 export NODE_ENV='development'
 
 #baidu
-alias relay='~/bin/relay fedev yinyong02'
+alias relay='~/relay fedev yinyong02'
 alias tbu='USERNAME=scmpf sh build.sh -o'
 alias ci='svn ci -m "ISSUE=`cat issue.info`"'
 alias upload='python2.7 ~/upload.py --exclude="deploy.yml,module.yml,deploy-conf.js,fis-conf.js,deploy.sh,compile.conf"'
