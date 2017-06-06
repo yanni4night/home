@@ -1,7 +1,6 @@
 #!/usr/bin/env expect
 
-set server  [lindex $argv 0 ]
-set user [lindex $argv 1 ]
+set user [lindex $argv 0 ]
 
 ## login relay
 spawn ssh ${user}@relay01.baidu.com
