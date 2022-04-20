@@ -2,9 +2,7 @@ usage:
 	@echo 'Usage: make install|uninstall'
 install:
 	@sh install.sh
-	@source ~/.bash_profile
-	@echo 'install complete'
+	@echo 'install complete, you need to add .my_bash_profile to your bash'
 uninstall:
 	@sh uninstall.sh
-	@source ~/.bash_profile
-	@echo 'uninstall complete'
+	@echo 'uninstall complete, you need to remove .my_bash_profile from your  bash'

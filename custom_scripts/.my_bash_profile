@@ -4,29 +4,16 @@
 alias ll='ls -l'
 alias cl='clear'
 alias md5sum='md5 -r'
-alias r='echo -e "\033[0m"'
-export GREP_OPTIONS="--exclude-dir=\.svn --exclude-dir=\.git --exclude-dir=output --exclude-dir=_build --color"
-
-#osx
-alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-alias rmds="sh ~/CleanDSStore.sh"
-alias and="sh ~/android-screenshot.sh"
+export GREP_OPTIONS="--exclude-dir=\.svn --exclude-dir=\.git --exclude-dir=dist --exclude-dir=node_modules --color"
 
 #git
-alias gpur='sh ~/git.sh pushr'
 alias gpu='sh ~/git.sh push'
 alias gpl='sh ~/git.sh pull'
-alias gitignore='sh ~/gitignore.sh'
 alias gs='git status'
 alias gd='git diff'
 alias gb='git branch'
-alias forgpl='sh ~/forgpl.sh'
-
-#svn
-alias svnrevertall='sh ~/svnrevertall.sh'
-alias svnrmall='sh ~/svnrmall.sh'
 
 #node
-alias nv='node --version'
-alias ni='npm install'
+alias ni='npm i'
+alias nci='npm ci'
 export NODE_ENV='development'

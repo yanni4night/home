@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#branch=`git br | awk '{if($1=="*"){print $2}}'`
-branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+branch=$(git branch --show-current)
 cmd="$1"
 opt='push'
 
@@ -10,17 +9,12 @@ if [ $branch = '' ];then
   exit
 fi
 
-if [ "$cmd" != 'push' ] && [ "$cmd" != 'pushr' ] && [ "$cmd" != 'pull' ];then
-    echo "\033[0;31mYou can do push or pull,not \"$1\"\033[0m"
+if [ "$cmd" != 'push' ] && [ "$cmd" != 'pull' ];then
+    echo "\033[0;31mYou can only push or pull, not \"$1\"\033[0m"
     exit
 else
     opt=$cmd
 fi
 
-if [ "$cmd" = 'pushr' ];then
-    echo "\033[0;32mgit $opt origin HEAD:refs/for/$branch\033[0m"
-    git push origin HEAD:refs/for/$branch
-else
-    echo "\033[0;32mgit $opt origin $branch\033[0m"
-    git $opt origin $branch --tag
-fi
+echo "\033[0;32mgit $opt origin $branch\033[0m"
+git $opt origin $branch --tag
